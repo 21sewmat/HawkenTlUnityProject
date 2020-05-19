@@ -18,3 +18,5 @@
 		- Animation Control
 		- Tags
 		- Collision
+
+- Created new Project, "TechDemoProject" and applied everything I know so far
