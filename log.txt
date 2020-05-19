@@ -1,3 +1,20 @@
 5/19/2020
 
 - Set up a working tutorial for Roguelike in Unity
+
+- Completed Step 2:
+	- Created Player Prefab
+		- Animations
+		- Animation Control
+		- Tags
+		- Collision
+	- Created Enemy1 Prefab
+		- Animations
+		- Animation Control
+		- Tags
+		- Collision
+	- Created Enemy2 Prefab
+		- Animations
+		- Animation Control
+		- Tags
+		- Collision
