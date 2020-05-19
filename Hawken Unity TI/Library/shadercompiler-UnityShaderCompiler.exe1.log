@@ -1,0 +1,18 @@
+Base path: 'C:/Users/21sewmat/Desktop/Unity/2019.3.13f1/Editor/Data', plugins path 'C:/Users/21sewmat/Desktop/Unity/2019.3.13f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=18731 outsize=8518 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=18731 outsize=8523 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=18731 outsize=10714 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5032 outsize=5412 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1864 outsize=561 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11176 outsize=9840 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11176 outsize=10585 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1957 outsize=1383 ok=1
