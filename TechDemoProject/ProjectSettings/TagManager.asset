@@ -3,10 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Floor
-  - Unit
-  - Item/Walls
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -16,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - Character
-  - Objects
-  - Floor
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -43,13 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Character
-    uniqueID: 1992731405
-    locked: 0
-  - name: Objects
-    uniqueID: 2827286645
-    locked: 0
-  - name: Floor
-    uniqueID: 2714620759
     locked: 0

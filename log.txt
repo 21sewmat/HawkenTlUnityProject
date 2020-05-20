@@ -19,4 +19,13 @@
 		- Tags
 		- Collision
 
+5/20/2020
+
+- Completed Step 3 of Roguelike game tutorial
+	- Completed all tiles for food, floor, and walls
+- Completed Step 4 of Roguelike game tutorial
+	- Completed Boardmanager.cs
+- Created sketches of new player for Tech Demo
+- Created Spear for new player in Tech Demo
+
 - Created new Project, "TechDemoProject" and applied everything I know so far
