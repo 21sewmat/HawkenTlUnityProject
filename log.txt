@@ -19,6 +19,8 @@
 		- Tags
 		- Collision
 
+
+
 5/20/2020
 
 - Completed Step 3 of Roguelike game tutorial
@@ -29,3 +31,19 @@
 - Created Spear for new player in Tech Demo
 
 - Created new Project, "TechDemoProject" and applied everything I know so far
+
+5/21/2020
+
+- TechDemoProject
+- Created Tileset (used asset)
+- Created Player Placeholder
+- Created Level
+- Created backdrop
+- Work on most of player movement
+	- needs to finish jump
+	- needs to fix bug of player stopping when walking
+
+- Still need to add:
+	- Spear mechanics
+	- Collectables
+	- 
