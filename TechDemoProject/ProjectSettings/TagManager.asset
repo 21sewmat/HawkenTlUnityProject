@@ -16,7 +16,7 @@ TagManager:
   - Blocking
   - Spear
   - Player
-  - 
+  - Ground
   - 
   - 
   - 
@@ -40,6 +40,9 @@ TagManager:
   m_SortingLayers:
   - name: background
     uniqueID: 1504426423
+    locked: 0
+  - name: player
+    uniqueID: 2838048533
     locked: 0
   - name: stage
     uniqueID: 3344265645

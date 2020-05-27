@@ -19,8 +19,6 @@
 		- Tags
 		- Collision
 
-
-
 5/20/2020
 
 - Completed Step 3 of Roguelike game tutorial
@@ -46,4 +44,9 @@
 - Still need to add:
 	- Spear mechanics
 	- Collectables
-	- 
+
+5/27/2020
+
+-Finally finished most of movement
+	- Still run into error of character jumping up along walls
+- Finished animations
