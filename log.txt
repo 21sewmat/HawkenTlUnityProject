@@ -50,3 +50,9 @@
 -Finally finished most of movement
 	- Still run into error of character jumping up along walls
 - Finished animations
+
+5/28/2020
+
+- Created Spear
+- Worked on spear throwing mechanic
+	- Still has some bugs to work out
