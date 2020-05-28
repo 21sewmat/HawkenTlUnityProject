@@ -15,6 +15,7 @@ public class PlayerControl : MonoBehaviour
     private Collider2D coll;
     [SerializeField] private LayerMask ground;
     [SerializeField] private float speed = 5f;
+    [SerializeField] private float jumpforce = 12f;
 
     private void Start()
     {
@@ -46,7 +47,7 @@ public class PlayerControl : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(ground))
         {
-            rb.velocity = new Vector2(rb.velocity.x, 10f);
+            rb.velocity = new Vector2(rb.velocity.x, jumpforce);
             state = State.jumping;
         }
         stateSwitch();
