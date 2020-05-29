@@ -56,3 +56,9 @@
 - Created Spear
 - Worked on spear throwing mechanic
 	- Still has some bugs to work out
+
+5/29/2020
+
+- Finished Spear Mechanics
+	- bugs
+		- Spear flips along x axis when sticking into wall

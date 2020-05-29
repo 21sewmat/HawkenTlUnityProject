@@ -14,8 +14,10 @@ public class PlayerControl : MonoBehaviour
     private State state = State.idle;
     private Collider2D coll;
     [SerializeField] private LayerMask ground;
+    [SerializeField] private LayerMask spear;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpforce = 12f;
+    [SerializeField] private float superjumpforce = 20f;
 
     private void Start()
     {
@@ -50,6 +52,13 @@ public class PlayerControl : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpforce);
             state = State.jumping;
         }
+
+        if (coll.IsTouchingLayers(spear))
+        {
+            rb.velocity = new Vector2(rb.velocity.x, superjumpforce);
+            state = State.jumping;
+        }
+
         stateSwitch();
         anim.SetInteger("state", (int)state);
     }

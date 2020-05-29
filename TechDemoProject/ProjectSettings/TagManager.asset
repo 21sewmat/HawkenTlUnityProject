@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Spear
   layers:
   - Default
   - TransparentFX
@@ -44,12 +45,12 @@ TagManager:
   - name: player
     uniqueID: 2838048533
     locked: 0
+  - name: spear
+    uniqueID: 626703423
+    locked: 0
   - name: stage
     uniqueID: 3344265645
     locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Spear
-    uniqueID: 626703423
     locked: 0
