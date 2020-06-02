@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Runtime.CompilerServices;
@@ -10,10 +11,11 @@ public class PlayerControl : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
-    private enum State {idle, running, jumping, falling}
+    private enum State { idle, running, jumping, falling }
     private State state = State.idle;
     private Collider2D coll;
-    [SerializeField] private LayerMask ground;
+    Color rayColor;
+    [SerializeField] private LayerMask Ground;
     [SerializeField] private LayerMask spear;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpforce = 12f;
@@ -41,13 +43,12 @@ public class PlayerControl : MonoBehaviour
             rb.velocity = new Vector2(speed, rb.velocity.y);
             transform.localScale = new Vector2(1, 1);
         }
-
         else
         {
 
         }
 
-        if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(ground))
+        if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpforce);
             state = State.jumping;
@@ -63,6 +64,25 @@ public class PlayerControl : MonoBehaviour
         anim.SetInteger("state", (int)state);
     }
 
+    private bool IsGrounded()
+    {
+        float extraHeightText = 0.1f;
+      
+        RaycastHit2D raycastHit = Physics2D.Raycast(coll.bounds.center, Vector2.down, coll.bounds.extents.y + extraHeightText, Ground);
+
+        if (raycastHit.collider != null)
+        {
+            rayColor = Color.green;
+        }
+        else
+        {
+            rayColor = Color.red;
+        }
+        Debug.DrawRay(coll.bounds.center, Vector2.down * (coll.bounds.extents.y + extraHeightText), rayColor);
+        Debug.Log(raycastHit.collider);
+        return raycastHit.collider != null;
+    }
+
     private void stateSwitch()
     {
         if (state == State.jumping)
@@ -74,7 +94,7 @@ public class PlayerControl : MonoBehaviour
         }
         else if (state == State.falling)
         {
-            if (coll.IsTouchingLayers(ground))
+            if (IsGrounded())
             {
                 state = State.idle;
             }

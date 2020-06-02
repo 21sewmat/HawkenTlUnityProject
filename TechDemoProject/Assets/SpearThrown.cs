@@ -41,10 +41,13 @@ public class SpearThrown : MonoBehaviour
 
         if (coll.IsTouchingLayers(ground))
         {
+            IsStuck = Stick.t;
+        }
+        if (IsStuck == Stick.t)
+        {
+            rb.velocity = new Vector2 (0, 0);
             rb.isKinematic = true;
             rb.gravityScale = 0;
-            rb.velocity = new Vector2(0, 0);
-            IsStuck = Stick.t;
         }
 
         if (coll.IsTouchingLayers(player) && IsStuck == Stick.t)

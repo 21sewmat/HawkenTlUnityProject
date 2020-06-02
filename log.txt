@@ -62,3 +62,7 @@
 - Finished Spear Mechanics
 	- bugs
 		- Spear flips along x axis when sticking into wall
+
+6/2/2020
+
+- Fixed bug where player can jump walls 
