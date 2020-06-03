@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3846739090565103542}
   - component: {fileID: 6242919670142124010}
   - component: {fileID: -4385268638175963774}
-  - component: {fileID: -5428216498237542665}
+  - component: {fileID: 5158864510542616384}
   m_Layer: 9
   m_Name: projectile
   m_TagString: Spear
@@ -103,7 +103,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &-4385268638175963774
 MonoBehaviour:
@@ -117,7 +117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58f896bcb7323844836e2881f70c861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 2668980833514731578}
   ground:
     serializedVersion: 2
     m_Bits: 2048
@@ -125,8 +124,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   velocity: {x: 0, y: 0}
-  offset: {x: 0.4, y: 0.1}
---- !u!61 &-5428216498237542665
+  speed: 10
+--- !u!61 &5158864510542616384
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,7 +138,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.22875744, y: -0.038748696}
+  m_Offset: {x: -0.14534777, y: -0.01815962}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -150,5 +149,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5753659, y: 0.30233335}
+  m_Size: {x: 1.6124061, y: 0.18169688}
   m_EdgeRadius: 0

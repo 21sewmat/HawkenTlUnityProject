@@ -79,7 +79,6 @@ public class PlayerControl : MonoBehaviour
             rayColor = Color.red;
         }
         Debug.DrawRay(coll.bounds.center, Vector2.down * (coll.bounds.extents.y + extraHeightText), rayColor);
-        Debug.Log(raycastHit.collider);
         return raycastHit.collider != null;
     }
 

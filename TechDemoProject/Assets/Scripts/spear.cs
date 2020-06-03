@@ -7,18 +7,25 @@ using UnityEngine;
 
 public class spear : MonoBehaviour
 {
-
+    public float offset;
     bool SpearHold = true;
+    public Transform shotPoint;
+    public GameObject projectile;
 
-  
     // Update is called once per frame
     void Update()
     {
-        if (SpearHold == true && Input.GetButtonDown("Fire1"))
+        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
+        if (SpearHold == true)
         {
-            SpearHold = false;
-            Destroy(gameObject);
+            if (Input.GetButtonDown("Fire1") && SpearHold == true)
+            {
+                Instantiate(projectile, shotPoint.position, transform.rotation);
+                SpearHold = false;
+                Destroy(gameObject);
+            }
         }
     }
-
 }

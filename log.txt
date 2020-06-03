@@ -45,6 +45,12 @@
 	- Spear mechanics
 	- Collectables
 
+5/23/2020
+- Worked on jump, ran into some errors, decided to restart
+
+5/25/2020
+- Fixed player stopping when walking bug using the 2Dcomposite
+
 5/27/2020
 
 -Finally finished most of movement
@@ -63,6 +69,21 @@
 	- bugs
 		- Spear flips along x axis when sticking into wall
 
+6/1/2020
+
+- attempted to fix wall jump glitch, failed, decided to create a new ground dection using 2Draycast
+- decided to scrap old spear mechanic for one that revolves around the mouse
+
 6/2/2020
 
-- Fixed bug where player can jump walls 
+- Fixed bug where player can jump walls using Raycast2D
+- began new spear mechanics that revolve around using the mouse and the translate function
+
+6/3/2020
+
+- Finished up Spear aiming and firing
+	- Spear still doesn't stick into the wall
+	- doesn't destroy spear when player jumps onto it
+		- summons a bunch of SpearHolds
+			- would probably create lag
+

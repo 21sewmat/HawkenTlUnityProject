@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be635f969f9eff4ebe5773481035f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
+  shotPoint: {fileID: 1532900781311089616, guid: 2cc57cd0f322b9947a496fa9c399ab5d,
+    type: 3}
+  projectile: {fileID: 2668980833514731578, guid: 410467b9025a5364f8c7365af3219dee,
+    type: 3}
 --- !u!1001 &6993878919341797015
 PrefabInstance:
   m_ObjectHideFlags: 0

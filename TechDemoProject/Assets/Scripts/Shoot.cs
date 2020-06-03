@@ -32,18 +32,5 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsSpearHeld == SpearHold.t && Input.GetButtonDown("Fire1"))
-        {
-            IsSpearHeld = SpearHold.f;
-            GameObject goProj = (GameObject)Instantiate(projectile, (Vector2)transform.position + offset * transform.localScale.x, Quaternion.identity);
-            goProj.GetComponent<Rigidbody2D>().velocity = new Vector2(velocity.x * transform.localScale.x, velocity.y);
-        }
-
-        if (coll.IsTouchingLayers(spear))
-        {
-            IsSpearHeld = SpearHold.t;
-            GameObject goSpHd = (GameObject)Instantiate(SpearHoldObj, (Vector2)transform.position + SpearHoldOffset * transform.localScale.x, Quaternion.identity);
-            goSpHd.transform.parent = parent.transform;
-        }
     }
 }
